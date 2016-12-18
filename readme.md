@@ -12,7 +12,7 @@ The course is meant to be taught in 4 two-hour sections. Each of the slides and 
 
  - Your laptop (Mac, PC, or Linux are all okay).
  - A modern web browser - Google Chrome recommended.
- - A text editor. We recommend Sublime Text 2 (free; available for Mac, PC, and Linux).
+ - A text editor. We recommend Sublime Text (free; available for Mac, PC, and Linux).
 
 
 ## Classes

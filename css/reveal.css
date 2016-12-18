@@ -100,6 +100,15 @@ body {
 	     -o-transition: all .2s ease;
 	        transition: all .2s ease;
 }
+.reveal .slides section u.fragment {
+	opacity: 1;
+    color: transparent;
+    border-bottom: 2px solid #53555C;
+	text-decoration:none;
+}
+.reveal .slides section u.fragment.visible {
+	color:#53555C;
+}
 	.reveal .slides section .fragment.visible {
 		opacity: 1;
 	}
@@ -225,9 +234,20 @@ body {
   content: '';
   font-style: italic;
 }
-
+.reveal .left-align{
+	text-align:left;
+}
+.reveal .clear{
+	clear:both;
+}
+.reveal hr{
+	width:100%
+}
 .reveal iframe {
 	z-index: 1;
+}
+.reveal .cp_embed_iframe {
+	border:1px solid #ddd
 }
 
 /* Ensure certain elements are never larger than the slide itself */
@@ -319,11 +339,11 @@ body {
 	display: block;
 	position: relative;
 	width: 90%;
-	margin: 15px auto;
+	margin: 0px auto;
 	text-align: left;
 	font-size: 0.55em;
 	font-family: monospace;
-	line-height: 1.2em;
+	line-height: 1;
 	word-wrap: break-word;
 }
 .reveal code {
@@ -356,6 +376,29 @@ body {
 
 .reveal table th {
 	font-weight: bold;
+}
+
+table.data{
+    border-collapse: collapse;
+    font-size: .75em;
+    max-width: none;
+}
+table.data th{
+	text-transform: uppercase;
+	text-align:center;
+}
+table.data th, table.data td, table.data tr{
+	padding: 1em;
+	text-align:center;
+}
+table.data.compact th, table.data.compact td, table.data.compact tr{
+	padding: .5em;
+	font-size: .9em;
+	line-height: 1.4;
+}
+.table.data.compact td, table.data.compact th{padding:0}
+table.data tr td:first-child{
+	text-align: left;
 }
 
 .reveal sup {
@@ -1876,5 +1919,3 @@ body {
 .zoomed .reveal .roll span:after {
 	visibility: hidden;
 }
-
-
