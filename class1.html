@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Girl Develop It - Intro to HTML + CSS, Class 1</title>
+
+    <meta name="description" content="Girl Develop It's Intro to HTML and CSS course, customized by Liz Shaw">
+    <meta name="author" content="Liz Shaw"">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+    <!-- dark editor-->
+    <link rel="stylesheet" href="lib/css/dark.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if (window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+
+    <!-- If use the PDF print sheet so students can print slides-->
+
+    <link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+            <!-- Code Your Own Website -->
+            <section>
+                <h2>Code Your Own Website</h2>
+                <img src="img/circle-gdi-logo.png" alt="GDI Logo" />
+                <h3>Intro to HTML + CSS</h3>
+                <p>
+                    <small>Class 1</small>
+                </p>
+            </section>
+			
+            <!-- Welcome!-->
+            <section>
+                <h2>Welcome!</h2>
+                <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+                <p>&nbsp;</p>
+                <p class="green">Some "rules"</p>
+                <ul>
+                    <li>We are here for you!</li>
+                    <li>Every question is important</li>
+                    <li>Help each other</li>
+                    <li>Have fun</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Welcome!</h2>
+                <p class="blue">Tell us about yourself.</p>
+                <ul>
+                    <li>Who are you?</li>
+                    <li>What do you hope to get out of the class?</li>
+                    <li>What is your favorite or dream vacation destination?</li>
+                </ul>
+            </section>
+
+            <!-- What is HTML? -->
+            <section>
+                <h2>What is HTML?</h2>
+                <ul>
+                    <li>HTML is the code that allows us to build websites</li>
+                    <li>It <span class="orange">structures</span> a webpage's content</li>
+                </ul>
+            </section>
+
+			<!-- History of HTML -->
+            <section>
+                <h2>History of HTML</h2>
+                <ul>
+                    <li>Invented by Tim Berners-Lee</li>
+                    <li class="fragment">Berners-Lee created "hypertext" to share scientific papers</li>
+                    <li class="fragment"><span class="orange">HTML</span>: <span class="orange">H</span>yper <span class="orange">T</span>ext <span class="orange">M</span>arkup <span class="orange">L</span>anguage</li>
+                    <li class="fragment"><span class="orange">HTTP</span>: <span class="orange">H</span>yper <span class="orange">T</span>ext <span class="orange">T</span>ransfer <span class="orange">P</span>rotocol
+                        <br><img src="img/http.png">
+                    </li>
+                    <li class="fragment">First web page August 6, 1991</li>
+                </ul>
+            </section>
+
+			<!-- HTML in Action -->
+            <section>
+                <h2>HTML in Action</h2>
+                <p>A markup language is a set of <span class="orange">markup tags</span>:
+                    <pre class="nowrap apache">
+							<code>
+								&lt;tagname>content&lt;/tagname>
+							</code>
+						</pre>
+                </p>
+
+                <p class="fragment">Each HTML tag <span class="orange">describes</span> its content:
+                    <pre class="nowrap apache fragment">
+							<code>
+								&lt;p>This sentence goes in a paragraph (p) tag.&lt;/p>
+							</code>
+						</pre>
+                </p>
+
+                <aside class="notes">
+                    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+                </aside>
+            </section>
+            <section>
+                <h2>HTML in Action</h2>
+                <p>If you 'View Page Source', you see this:
+                    <br><img src="img/homepage-html.png">
+                </p>
+            </section>
+
+			<!-- Terms -->
+            <section>
+                <h2>Terms</h2>
+                <ul>
+                    <li>
+                        <div class="green">Web design</div>
+                        <div>The process of planning, structuring and creating a website</div>
+                    </li>
+                    <li>
+                        <div class="green">Web development</div>
+                        <div>The process of programming dynamic web applications</div>
+                        <ul>
+                            <li>
+                                <div class="orange">Front end development 👍</div>
+                                <div>The outwardly visible elements of a website or application</div>
+                            </li>
+                            <li>
+                                <div class="green">Back end development</div>
+                                <div>The inner workings and functionality of a website or application.</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+			<!-- Get Started -->
+            <section>
+                <h2>Get Started: Tools</h2>
+
+                <p>We'll be using the following tools in class today:</p>
+                <p>&nbsp;</p>
+                <ul>
+                    <li>
+                        <div class="orange"><strong>Browser</strong>
+                        </div>
+                        <ul>
+                            <li><a href="https://www.google.com/chrome/browser/" target="_blank" class="roll"><span data-title="Chrome">Chrome</span></a>
+                            </li>
+                        </ul>
+                        <br />
+                    </li>
+                    <li>
+                        <div class="orange"><strong>Development Toolkit</strong>
+                        </div>
+                        <ul>
+                            <li>Chrome's Inspector (built-in to Chrome)</li>
+                        </ul>
+                        <br />
+                    </li>
+                    <li>
+                        <div class="orange"><strong>Text Editor (your preference)</strong>
+                        </div>
+                        <ul>
+                            <li>Mac: <a href="http://www.sublimetext.com/2" target="_blank" class="roll"><span data-title="SublimeText">SublimeText</span></a>, <a href="http://www.barebones.com/products/textwrangler" target="_blank" class="roll"><span data-title="TextWrangler">TextWrangler</span></a>, <a href="http://www.barebones.com/products/bbedit/" target="_blank" class="roll"><span data-title="BBEdit">BBEdit</span></a>, <a href="http://www.jedit.org/" target="_blank" class="roll"><span data-title="jEdit">jEdit</span></a>
+                            </li>
+                            <li>Windows: <a href="http://www.sublimetext.com/2" target="_blank" class="roll"><span data-title="SublimeText">SublimeText</span></a>, <a href="https://notepad-plus-plus.org/download/v6.8.3.html" target="_blank" class="roll"><span data-title="Notepad++">Notepad++</span></a>
+                            </li>
+                            <li>Linux: <a href="http://www.sublimetext.com/2" target="_blank" class="roll"><span data-title="SublimeText">SublimeText</span></a>, <a href="http://www.jedit.org/" target="_blank" class="roll"><span data-title="jEdit">jEdit</span></a>, <a href="https://wiki.gnome.org/Apps/Gedit#Download" target="_blank" class="roll"><span data-title="gedit">gedit</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Get Started: Folder Structure</h2>
+                <p>All the files for your site should be stored within the same folder.</p>
+                <div class="left" style="width: 45%;">
+                    <p class="left-align"><strong>This includes:</strong>
+                    </p>
+                    <ul>
+                        <li>HTML Files</li>
+                        <li>CSS Files</li>
+                        <li>Images</li>
+                        <li>Script files</li>
+                        <li>Anything else that will appear on your site</li>
+                    </ul>
+                    <p class="left-align"><small>Note: File names should not include spaces or special characters. File names ARE case sensitive.</small>
+                    </p>
+                </div>
+                <div class="right" style="width: 45%;">
+                    <img src="img/folderstructure1.png">
+                </div>
+            </section>
+            <section>
+                <h2>Get Started: Folder Structure</h2>
+                <div class="left" style="width: 45%;">
+                    <p class="left-align">Go ahead and create your folders
+                        <br /> </p>
+                    <p class="left-align">Ignore the HTML and CSS files for now</p>
+                </div>
+                <div class="right" style="width: 45%;">
+                    <img src="img/folderstructure1.png">
+                </div>
+            </section>
+
+           <!--
+            <section>
+                <section>
+                    <h2>Fragmented Views</h2>
+                    <p>Hit the next arrow...</p>
+                    <p class="fragment">... to step through ...</p>
+                    <ol>
+                        <li class="fragment"><code>any type</code>
+                        </li>
+                        <li class="fragment"><em>of view</em>
+                        </li>
+                        <li class="fragment"><strong>fragments</strong>
+                        </li>
+                    </ol>
+
+                    <aside class="notes">
+                        This slide has fragments which are also stepped through in the notes window.
+                    </aside>
+                </section>
+                <section>
+                    <h2>Fragment Styles</h2>
+                    <p>There's a few styles of fragments, like:</p>
+                    <p class="fragment grow">grow</p>
+                    <p class="fragment shrink">shrink</p>
+                    <p class="fragment roll-in">roll-in</p>
+                    <p class="fragment fade-out">fade-out</p>
+                    <p class="fragment highlight-red">highlight-red</p>
+                    <p class="fragment highlight-green">highlight-green</p>
+                    <p class="fragment highlight-blue">highlight-blue</p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Vertical Slides</h2>
+                    <p>
+                        Slides can be nested inside of other slides, try pressing <a href="#/14/1">down</a>.
+                    </p>
+                    <a href="#/14/1" class="image">
+                        <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                    </a>
+                </section>
+                <section>
+                    <h2>Basement Level 1</h2>
+                    <p>Press down or up to navigate.</p>
+                    <a href="#/14/2" class="image">
+                        <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                        <a href="#/14" class="image">
+                            <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
+                        </a>
+                </section>
+                <section>
+                    <h2>Basement Level 2</h2>
+                    <a href="#/14/3" class="image">
+                        <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                        <a href="#/14/1" class="image">
+                            <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
+                        </a>
+                </section>
+                <section>
+                    <h2>Basement Level 3</h2>
+                    <p>That's it, time to go back up.</p>
+                    <a href="#/14" class="image">
+                        <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
+                    </a>
+                </section>
+            </section>-->
+
+			<!-- Questions? -->
+            <section>
+                <h2>Questions?</h2>
+                <div style="font-size:1200%; height:100%; margin-top:20%" class="blue">?
+                    <div class="clear"></div>
+                </div>
+            </section>
+
+        </div>
+        <footer>
+            <div class="copyright">
+                Intro to HTML &amp; CSS&nbsp; | &nbsp;Boston Chapter &nbsp;| &nbsp;
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" />
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                condition: function() {
+                    return !!document.querySelector('pre code');
+                },
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/accessibility-helper/js/accessibility-helper.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }]
+        });
+    </script>
+
+</body>
+
+</html>
