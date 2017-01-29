@@ -315,148 +315,26 @@ WE ARE NOW IN 53 CITIES!</p>
       </section>
 
 
-			<!-- Anatomy of an HTML Element -->
-			<section>
-				<h3>Anatomy of an HTML element</h3>
-    		<strong class="blue">Element</strong>
-				<pre class="nowrap apache">
-								<code>
-&lt;section>Content in the middle&lt;/section>
-								</code>
-				</pre>
-
-				<div class="fragment">
-					<pre class="nowrap apache">
-									<code>
-&lt;p>The p tag means this content is a paragraph.&lt;/p>
-									</code>
-								</pre>
-								<pre class="nowrap apache">
-									<code>
-&lt;header>The header tag says content is a website's header.&lt;/header>
-									</code>
-								</pre>
-				</div>
-				<aside class="notes">
-          Element - A full block, including opening and closing tags. An element is comprised of its content and tags
-          Tags mark the beginning and end of an element, and indicate the element's purpose. There are opening and closing tags
-          Think of the element as the block of code from the opening tag to closing tag, and the tag as just the container's start and finish. The tag is a component of the element, which is the huge block of code.</aside>
-			</section>
-
-			<!-- HTML Coding Tip -->
-			<section>
-				<h3>HTML Coding Tip #1</h3>
-				<ol>
-					<li>
-						<pre class="nowrap apache">
-							<code>
-								&lt;strong>
-							</code>
-						</pre>
-					</li>
-					<li>
-						<pre class="nowrap apache">
-							<code>
-								&lt;strong>&lt;/strong>
-							</code>
-						</pre>
-					</li>
-					<li>
-						<pre class="nowrap apache">
-							<code>
-								&lt;strong>Now I can add content!&lt;/strong>
-							</code>
-						</pre>
-					</li>
-				</ol>
-				<aside class="notes">
-          Whenever you type an opening tag, immediately type the closing tag, then fill in your content
-          Prevents any stray unclosed tags -- show an example in NotePad?</aside>
-			</section>
-
-			<!-- Anatomy of an HTML element -->
-			<section>
-				<h3>Anatomy of an HTML element</h3>
-				<p class="blue">Shorthand</p>
-				<ul>
-					<li class = "fragment">
-						<strong class="green">Container Element</strong>: Can contain content within the opening and closing tags:
-						<pre class="apache">
-							<code>&lt;p>This is content within the opening and closing tags.&lt;/p></code>
-						</pre>
-					</li>
-					<li class = "fragment">
-						<strong class="green">Stand-Alone Element</strong>: When an element does not contain any content within its opening and closing tags, use the <span class="orange">&lt;tagname /&gt;</span> shorthand:
-						<pre class="nowrap apache">
-							<code>&lt;br /></code>
-						</pre>
-						<pre class="nowrap apache">
-							<code>&lt;img src="images/photo.jpg" /></code>
-						</pre>
-						<small>The examples are shorthand for <em>&lt;br&gt;&lt;/br&gt;</em> and <em>&lt;img src="images/photo.jpg"&gt;&lt;/img&gt;</em></small>
-					</li>
-				</ul>
-			</section>
-			<section>
-				<h3>Anatomy of an HTML element</h3>
-				<p class="blue">Attributes</p>
-				<p>Adding <span class="orange">attributes</span> to an HTML tag provides additional information about the HTML element</p>
-				<img src="img/html-tag.gif" alt="Attributes in HTML" />
-				<aside class="notes">Skip to next slide! Has more info</aside>
-			</section>
-			<section>
-				<h3>Anatomy of an HTML element</h3>
-				<p class="blue">Attributes</p>
-				<img src="img/html-tag.gif" style="max-height:130px;" alt="Attributes in HTML" />
-				<ul>
-					<li class = "fragment">
-						<strong class="orange">Attribute Name</strong>: class, ID, style, href, etc.
-						<ul>
-							<li>Placed inside an opening tag, before the right angle bracket.</li>
-						</ul>
-					</li>
-					<li class="fragment">
-						<strong class="orange">Attribute Value</strong>
-						<ul>
-							<li>Value is the value assigned to a given attribute</li>
-							<li>Values must be contained inside quotation marks:
-								<pre>
-									<code class="apache">&lt;img src="my_picture.jpg" />
-									&lt;div id="intro"&gt;Lorem ipsum&lt;/div>
-									&lt;a href="http://girldevelopit.com" class="fancy-link">GDI&lt;/a></code>
-								</pre>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<aside class="notes">
-					Attribute placed inside an opening tag, right before the angle bracket. Can add as many as you want and order doesn't matter. Code an example of an image with multiple attributes (src, ID, class, alt, title). Each attribute separated by a space with name="value".
-				</aside>
-			</section>
-
-
 
 			<!-- Fundamental Structure of an HTML File -->
 			<section>
 				<h3>The Fundamental Structure of an HTML File</h3>
-				<p class="blue">Doctype</p>
-				<p>The first thing in an HTML file is the doctype, which tells the browser which language the page is using:</p>
 				<pre class="apache nowrap">
 					<code>
 						&lt;!DOCTYPE html>
 					</code>
 				</pre>
 				<img src="img/document-types.jpg" alt="Various document types" />
-				<p><small>The doctype is case-insensitive. <br/>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
 				<aside class="notes">
+          The first thing in an HTML file is the doctype, which tells the browser which language the page is using.
+          The doctype is case-insensitive. <br/>DOCtype, doctype, DocType and DoCtYpe are all valid.
 					Exclamation mark indicates informative content that doesn't show up as text on the screen. Example: A human can look at a type of document and understand what type of document that is (letter, award, outline, etc.), but a browser has to be told specifically what it's looking at. Reads from top to bottom -- now that it knows it's HTML, it moves on to parsing the rest of the document as HTML.
 				</aside>
 			</section>
 			<section>
 				<h3>The Fundamental Structure of an HTML File</h3>
-				<p class="blue">HTML Element</p>
-				<p>After &lt;!DOCTYPE html>, the page content must be
-				contained between &lt;html>&lt;/html> tags.</p>
+				<aside class="notes">After &lt;!DOCTYPE html>, the page content must be
+				contained between &lt;html>&lt;/html> tags.</aside>
 				<pre class="apache"><code>
 &lt;!DOCTYPE html>
 &lt;html>
@@ -466,13 +344,11 @@ WE ARE NOW IN 53 CITIES!</p>
 			</section>
 			<section>
 				<h3>The Fundamental Structure of an HTML File</h3>
-				<p class="blue">Head Element</p>
-				<p>The head contains information about the page, but <u>does not contain page content</u>. It contains elements that let the browser know:</p>
-				<ul class="left-align" style="font-size:90%;margin-left:3em">
-					<li>The page's <span class="orange">title</span></li>
-					<li><span class="orange">Meta information</span> about the page: Meta information is not visible to the user, but has many purposes, one of which is to tell search engines about your page, who created it, and the page's description</li>
-					<li>Where to find the <span class="orange">CSS file</span> (which styles the page)</li>
-				</ul>
+				<aside class="notes">>The head contains information about the page, but <u>does not contain page content</u>. It contains elements that let the browser know:
+					The page's <span class="orange">title</span>
+					<span class="orange">Meta information</span> about the page: Meta information is not visible to the user, but has many purposes, one of which is to tell search engines about your page, who created it, and the page's description
+					Where to find the <span class="orange">CSS file</span> (which styles the page)
+				</aside>
 <pre class="apache"><code>&lt;!DOCTYPE html>
 &lt;html>
 	&lt;head>
@@ -523,87 +399,174 @@ WE ARE NOW IN 53 CITIES!</p>
 				<aside class="notes">Memorize this, and you will go far! Every page begins with this.</aside>
 			</section>
 
+      <section>
+        <h2>Let's Review</h2>
+        <ul>
+          <li>What does the DOCTYPE tell us?</li>
+          <li>What comes after DOCTYPE?</li>
+          <li>What is the difference between head and body?</li>
+          <li>Where does the title go?</li>
+        </ul>
+      </section>
+      <!-- Let's Develop It! -->
+      <section class="hide-pdf">
+        <h2>Let's develop it!</h2>
+        <ol>
+          <li>Create a new folder on your computer: class1</li>
+          <li>Open your text editor and create a new file.</li>
+          <li>Save it as index.html in the 'class1' folder.</li>
+          <li>Add the fundamental structure (a doctype, head, title and body).</li>
+        </ol>
+        <br/>
+        <p class="blue">Later we'll add some content to it!</p>
 
-			 <section>
-                <h3>Get Started: Folder Structure</h3>
-                <p>All the files for your site should be stored within the same folder.</p>
-                <div class="left" style="width: 45%;">
-                    <p class="left-align"><strong>This includes:</strong>
-                    </p>
-                    <ul>
-                        <li>HTML Files</li>
-                        <li>CSS Files</li>
-                        <li>Images</li>
-                        <li>Script files</li>
-                        <li>Anything else that will appear on your site</li>
-                    </ul>
-                    <p class="left-align"><small>Note: File names should not include spaces or special characters. File names ARE case sensitive.</small>
-                    </p>
-                </div>
-                <div class="right" style="width: 45%;">
-                    <img src="img/folderstructure1.png" alt="Folder Structure">
-                </div>
-				<aside class="notes">
-					If confused by file system, don't worry, can still get through class by starting from scratch.
-				</aside>
-            </section>
-            <section>
-                <h3>Get Started: Folder Structure</h3>
-                <div class="left" style="width: 45%;">
-                    <p class="left-align">Go ahead and create your folders
-                        <br /> </p>
-                    <p class="left-align">Ignore the HTML and CSS files for now</p>
-                </div>
-                <div class="right" style="width: 45%;">
-                    <img src="img/folderstructure1.png" alt="Folder Structure">
-                </div>
-				<aside class="notes">
-					Mac, PC, Linux -- doesn't matter. As long as the structure is the same and you choose a folder you'll have access to next week. MAKE FOLDERS IN FRONT OF STUDENTS.
-				</aside>
-            </section>
+        <aside class="notes">
+          Code this alongside students from scratch. Have them open up index.html in Chrome and in NotePad++, tell them to refresh every time you add text to their text editor.
+        </aside>
+      </section>
 
-			<!-- Let's Develop It! -->
-			<section class="hide-pdf">
-				<h2>Let's develop it!</h2>
-				<ol>
-					<li>Open your text editor and create a new file.</li>
-					<li>Save it as index.html in the 'class1' folder you created earlier.</li>
-					<li>Add the fundamental structure (a doctype, head, title and body).</li>
-				</ol>
-				<img src="img/folderstructure1.png" alt="Folder Structure">
-				<p>Later we'll add some content to it!</p>
+      <!-- HTML Coding Tip -->
+      <section>
+        <h3>HTML Coding Tip #1</h3>
+        <ol>
+          <li>
+            <pre class="nowrap apache">
+              <code>
+                &lt;title>
+              </code>
+            </pre>
+          </li>
+          <li>
+            <pre class="nowrap apache">
+              <code>
+                &lt;title>&lt;/title>
+              </code>
+            </pre>
+          </li>
+          <li>
+            <pre class="nowrap apache">
+              <code>
+                &lt;title>
+                Now I can add the title!
+                &lt;/title>
+              </code>
+            </pre>
+          </li>
+        </ol>
+        <aside class="notes">
+          Whenever you type an opening tag, immediately type the closing tag, then fill in your content
+          Prevents any stray unclosed tags -- show an example in NotePad?</aside>
+      </section>
 
-				<aside class="notes">
-					Code this alongside students from scratch. Have them open up index.html in Chrome and in NotePad++, tell them to refresh every time you add text to their text editor.
-				</aside>
-			</section>
+      <!-- Common HTML Elements -->
+      <section>
+        <h3>Common HTML Elements</h3>
+        <p class="blue">Paragraph</p>
+        <div>
+          <div class = "left" style = "width:50%">
+          <p><span class="orange"><u>HTML:</u></span></p>
+          <pre><code>&lt;p>Paragraph 1&lt;/p>
+          &lt;p>Paragraph 2&lt;/p>
+          &lt;p>Paragraph 3&lt;/p></code></pre>
+          <pre><code>
+          &lt;p>Paragraph 1&lt;/p>
+
+
+          &lt;p>Paragraph 2&lt;/p>
+          &lt;p>Paragraph 3&lt;/p>
+          </code></pre>
+          </div>
+          <p><span class="orange"><u>Result:</u></span></p>
+          <div>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+          </div>
+          <div class ="clear"></div>
+        </div>
+      </section>
+      <section>
+        <h3>Common HTML Elements</h3>
+        <p class="blue">Paragraphs in Action</h3>
+        <img src="img/example-paragraphs.png" alt="Example of Paragraphs in the wild" />
+      </section>
+      <section>
+        <h3>Common HTML Elements</h3>
+        <p class="blue">Headings</p>
+        <div>
+          <div class = "left" style = "width:50%">
+            <p><span class="orange"><u>HTML:</u></span></p>
+            <pre><code>&lt;h1>Heading 1&lt;/h1>
+            &lt;h2>Heading 2&lt;/h2>
+            &lt;h3>Heading 3&lt;/h3>
+            &lt;h4>Heading 4&lt;/h4>
+            &lt;h5>Heading 5&lt;/h5>
+            &lt;h6>Heading 6&lt;/h6></code></pre>
+          </div>
+          <div class = "left" style = "width:50%">
+            <p><span class="orange"><u>Result:</u></span></p>
+            <h1 style = "font-size: 120%">Heading 1</h1>
+            <h2 style = "font-size: 110%">Heading 2</h2>
+            <h3 style = "font-size: 105%">Heading 3</h3>
+            <h4 style = "font-size: 95%">Heading 4</h4>
+            <h5 style = "font-size: 85%">Heading 5</h5>
+            <h6 style = "font-size: 75%">Heading 6</h6>
+          </div>
+          <div class ="clear"></div>
+        </div>
+        <aside class="notes">Heading number indicates hierarchy, not size. Think: Outlines from high school papers</aside>
+      </section>
+      <section>
+        <h3>Common HTML Elements</h3>
+        <p class="blue">Headings in Action</p>
+        <img src="img/example-headings.png" alt="Example of headings" style="max-height:17em;" />
+      </section>
+      <section>
+        <h3>Common HTML Elements</h3>
+        <p class="blue">Formatted text</p>
+        <div>
+          <div class = "left" style = "width:70%">
+            <p><span class="orange"><u>HTML:</u></span></p>
+            <pre class="apache">
+            <code>&lt;p>Here is a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important&lt;/strong> text.&lt;/p></code></pre>
+          </div>
+          <div class = "left" style = "width:30%">
+            <p><span class="orange"><u>Result:</u></span></p>
+            <p>Here is a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.</p>
+          </div>
+        </div>
+        <div class ="clear"></div>
+        <aside class="notes">Note: <em>em</em> and <em>strong</em> are meant to indicate meaning through style. If you want italicized or bold text for appearance and not to communicate meaning, you should use CSS.</aside>
+      </section>
+
+
 
 			<!-- Nesting-->
 			<section>
 			  <h3>Nesting</h3>
 			  <div class="left" style="width:50%">
-				<p>All elements "nest" inside one another</p>
-				<p><small>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p>&lt;/p> inside of the &lt;body>&lt;/body> tags. The &lt;p>&lt;/p> is now nested inside the &lt;body>&lt;/body>, and is one of its descendants</small></p>
+				<p></p>
 			  </div>
-			  <div class = "left" style = "width:50%">
-				<img src = "img/nesting.jpg"/>
-			  </div>
+				<img src = "img/nesting.jpg" width="50%"/>
 			  <aside class="notes">
-				Do this example in Notepad++.
+          Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p>&lt;/p> inside of the &lt;body>&lt;/body> tags. The &lt;p>&lt;/p> is now nested inside the &lt;body>&lt;/body>, and is one of its descendants
+          All elements "nest" inside one another
+				  Do this example in Notepad++.
 			  </aside>
 			</section>
 			<section>
 				<h3>Nesting: Example</h3>
 				<div>
-					<p>All your page's content is 'nested' inside the body element:</p>
+					<aside class="notes">All your page's content is 'nested' inside the body element:</aside>
 					<pre><code class="html">&lt;body&gt;
 	&lt;p&gt;
 		A paragraph inside the body element
 	&lt;/p&gt;
 &lt;/body&gt;</code></pre>
 				</div>
+        <br/>
 				<div class="fragment">
-					<p><br />And other elements can be nested inside of that:</p>
+					<aside class="notes"><br />And other elements can be nested inside of that:</aside>
 					<pre><code class="apache">&lt;body&gt;
 	&lt;p&gt;
 		A paragraph inside the body element
@@ -614,12 +577,11 @@ WE ARE NOW IN 53 CITIES!</p>
 &lt;/body&gt;</code></pre>
 				</div>
 				<div class="fragment">
-					<p class="left-align">&rArr; A paragraph inside the body element <em>which has some italic text</em> and <strong>some bold text</strong></p>
 				</div>
 			</section>
 			<section>
 				<h3>Nesting</h3>
-				<p>HTML elements are often looked at as a family tree. Developers will often refer to elements as "siblings", "immediate children", and "descendants".</p>
+				<aside class="notes">HTML elements are often looked at as a family tree. Developers will often refer to elements as "siblings", "immediate children", and "descendants".</aside>
 					<p class="green">Can you name any siblings?</p>
 					<pre class="apache"><code>&lt;!DOCTYPE html>
 &lt;html>
@@ -639,14 +601,14 @@ WE ARE NOW IN 53 CITIES!</p>
 				<h3>HTML Coding Tip #2</h3>
 				<ol>
 					<li>Whenever you add a 'child' element:
-<pre><code class="html">&lt;ul&gt;
-&lt;/ul&gt;</code></pre>			<p>&nbsp;</p>
+<pre><code class="html">&lt;body&gt;
+&lt;/body&gt;</code></pre>			<p>&nbsp;</p>
 					</li>
 					<li>... indent it on a new line!
-<pre><code class="html">&lt;ul&gt;
-	&lt;li>I'm indented!&lt;/li&gt;
-	&lt;li>I'm also indented!&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+<pre><code class="html">&lt;body&gt;
+	&lt;p>I'm indented!&lt;/p&gt;
+	&lt;p>I'm also indented!&lt;/p&gt;
+&lt;/body&gt;</code></pre>
 					</li>
 				</ol>
 				<p><br />This will make your life much easier down the road, as you add more content and style your pages.</p>
@@ -654,7 +616,7 @@ WE ARE NOW IN 53 CITIES!</p>
 			</section>
 			<section>
 				<h3>HTML Coding Tip #3</h3>
-				<p>HTML ignores multiple whitespaces in a row. You can add consecutive white space characters (spaces, tabs, &amp; carriage returns) into your HTML, but when you view that page &mdash; <em>all but one disappears!</em></p>
+				<aside class="notes">HTML ignores multiple whitespaces in a row. You can add consecutive white space characters (spaces, tabs, &amp; carriage returns) into your HTML, but when you view that page &mdash; <em>all but one disappears!</em></aside>
 				<p>&nbsp;</p>
 
 				<div>
@@ -681,97 +643,23 @@ WE ARE NOW IN 53 CITIES!</p>
 					<div class ="clear"></div>
 				</div>
 				<p></p>
-				<p><small>To force consecutive spaces to show, use <em>&amp;nbsp;</em> (stands for <em>"no-break space"</em>) in your HTML instead of spaces.</small></p>
+				<aside class="notes"><small>To force consecutive spaces to show, use <em>&amp;nbsp;</em> (stands for <em>"no-break space"</em>) in your HTML instead of spaces.</small></aside>
 				<aside class="notes">
 					This is very different from a word processor. You can use that to your advantage, for organizational purposes.
 				</aside>
+        <p class="blue">The solution is <em>&amp;nbsp;</em></p>
 			</section>
 
-			<!-- Common HTML Elements -->
-			<section>
-				<h3>Common HTML Elements</h3>
-				<p class="blue">Paragraph</p>
-				<div>
-					<div class = "left" style = "width:50%">
-					<p><span class="orange"><u>HTML:</u></span></p>
-					<pre><code>&lt;p>Paragraph 1&lt;/p>
-					&lt;p>Paragraph 2&lt;/p>
-					&lt;p>Paragraph 3&lt;/p></code></pre>
-					<small><br />White space outside of any tags won't render (that's just for us humans!):<p><br /></p></small>
-					<pre><code>
-					&lt;p>Paragraph 1&lt;/p>
-
-
-					&lt;p>Paragraph 2&lt;/p>
-					&lt;p>Paragraph 3&lt;/p>
-					</code></pre>
-					</div>
-					<p><span class="orange"><u>Result:</u></span></p>
-					<div>
-						<p>Paragraph 1</p>
-						<p>Paragraph 2</p>
-						<p>Paragraph 3</p>
-					</div>
-					<div class ="clear"></div>
-				</div>
-			</section>
-			<section>
-				<h3>Common HTML Elements</h3>
-				<p class="blue">Paragraphs in Action</h3>
-				<p>Paragraphs allow you to format your content in a readable fashion.</p>
-				<img src="img/example-paragraphs.png" alt="Example of Paragraphs in the wild" />
-				<p><small>You can edit how paragraphs are displayed with CSS</small></p>
-			</section>
-			<section>
-				<h3>Common HTML Elements</h3>
-				<p class="blue">Headings</p>
-				<div>
-					<div class = "left" style = "width:50%">
-						<p><span class="orange"><u>HTML:</u></span></p>
-						<pre><code>&lt;h1>Heading 1&lt;/h1>
-						&lt;h2>Heading 2&lt;/h2>
-						&lt;h3>Heading 3&lt;/h3>
-						&lt;h4>Heading 4&lt;/h4>
-						&lt;h5>Heading 5&lt;/h5>
-						&lt;h6>Heading 6&lt;/h6></code></pre>
-					</div>
-					<div class = "left" style = "width:50%">
-						<p><span class="orange"><u>Result:</u></span></p>
-						<h1 style = "font-size: 120%">Heading 1</h1>
-						<h2 style = "font-size: 110%">Heading 2</h2>
-						<h3 style = "font-size: 105%">Heading 3</h3>
-						<h4 style = "font-size: 95%">Heading 4</h4>
-						<h5 style = "font-size: 85%">Heading 5</h5>
-						<h6 style = "font-size: 75%">Heading 6</h6>
-					</div>
-					<div class ="clear"></div>
-				</div>
-				<hr />
-				<small>Heading number indicates hierarchy, not size. Think: Outlines from high school papers</small>
-			</section>
-			<section>
-				<h3>Common HTML Elements</h3>
-				<p class="blue">Headings in Action</p>
-				<img src="img/example-headings.png" alt="Example of headings" style="max-height:17em;" />
-			</section>
-			<section>
-				<h3>Common HTML Elements</h3>
-				<p class="blue">Formatted text</p>
-				<div>
-					<div class = "left" style = "width:70%">
-						<p><span class="orange"><u>HTML:</u></span></p>
-						<pre class="apache">
-						<code>&lt;p>Here is a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important&lt;/strong> text.&lt;/p></code></pre>
-					</div>
-					<div class = "left" style = "width:30%">
-						<p><span class="orange"><u>Result:</u></span></p>
-						<p>Here is a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.</p>
-					</div>
-				</div>
-				<div class ="clear"></div>
-				<hr />
-				<small>Note: <em>em</em> and <em>strong</em> are meant to indicate meaning through style. If you want italicized or bold text for appearance and not to communicate meaning, you should use CSS.</small>
-			</section>
+      <!-- Let's Review-->
+      <section class="hide-pdf">
+        <h2>Let's Review</h2>
+        <ul>
+          <li>What is the tag for a paragraph?</li>
+          <li>What is the tag for a heading?</li>
+          <li>What is the tag for bold text?</li>
+          <li>What is the tag for italics text?</li>
+        </ul>
+      </section>
 
 			<!-- Let's Develop It! -->
 			<section class="hide-pdf">
@@ -785,24 +673,21 @@ WE ARE NOW IN 53 CITIES!</p>
 				<small class="blue">Remember to place content in the <em>body</em> element, not the <em>head</em></small>
 			</section>
 
-			<!-- Common HTML Elements -->
+      <!-- Common HTML Elements -->
 			<section>
 				<h3>Common HTML Elements</h3>
 				<p class="blue">Links</p>
-				<p>Standard links have three components:</p>
-				<ol>
-					<li>The <span class="green">tag:</span>
-						<p style="text-indent:2em;"><em>&lt;a>&lt;/a></em></p>
-					</li>
-					<li>The <span class="green">content</span> (the clickable portion within the <em>a</em> element):
-						<p style="text-indent:2em;"><em>GDI Boston</em></p>
-					</li>
-					<li>The <span class="green">href</span> attribute (the destination of the link):
-						<p style="text-indent:2em;"><em>href="http://www.girldevelopit.com/chapters/boston"</em></p>
-					</li>
-				</ol>
 				<p><pre class="apache"><code>&lt;a href="http://www.girldevelopit.com/chapters/boston">GDI Boston&lt;/a></code></pre></p>
 			</section>
+
+      <!-- Anatomy of an HTML element -->
+      <section>
+        <h3>Anatomy of an HTML element</h3>
+        <p class="blue">Attributes</p>
+        <img src="img/html-tag.gif" alt="Attributes in HTML" />
+        <aside class="notes">Skip to next slide! Has more info</aside>
+      </section>
+
 			<section>
 				<h3>Common HTML Elements</h3>
 				<p class="blue">Additional Link Options</p>
@@ -820,9 +705,6 @@ WE ARE NOW IN 53 CITIES!</p>
 			<section>
 				<h3>Common HTML Elements</h3>
 				<p class="blue">Additional Link Options</p>
-				<ol start="3">
-					<li><span class="green">Surround another element</span>, such as a heading or images, within &lt;a>&lt;/a> tags to link it<p>&nbsp;</p></li>
-				</ol>
 				<div>
 					<div class = "left" style = "width:85%">
 						<p><span class="orange"><u>HTML:</u></span></p>
@@ -844,10 +726,17 @@ WE ARE NOW IN 53 CITIES!</p>
 			<section>
 				<h3>Common HTML Elements</h3>
 				<p class="blue">Additional Link Options</p>
-				<ol start="4">
-					<li><span class="green">Make an email link</span>, which launches a user's mail program, by inserting <span class="orange"><strong>mailto:</strong></span> directly before the email address<br />
-					<pre><code class="apache">&lt;a href="mailto:lizs@girldevelopit.com">Email me!&lt;/a></code></pre>
-					</li>
+				<pre><code class="apache">&lt;a href="mailto:lizs@girldevelopit.com">Email me!&lt;/a></code></pre>
+			</section>
+
+      <section class="hide-pdf">
+				<h2>Let's Review!</h2>
+				<ol>
+					<li>What is the html tag for a link?</li>
+					<li>What attribute do you use to specify which url to go to?</li>
+					<li>How do you open a link in a new tab?</li>
+          <li>How do you link to an email address?</li>
+
 				</ol>
 			</section>
 
@@ -868,48 +757,38 @@ WE ARE NOW IN 53 CITIES!</p>
 			<section>
 				<h3>Common HTML Elements</h3>
 				<p class="blue">Images</p>
-				<p>Images have three components:</p>
-				<ol>
-					<li>The <span class="green">tag:</span>
-						<p style="text-indent:2em;"><em>&lt;img /></em></p>
-					</li>
-					<li>The <span class="green">src</span> attribute:
-						<p style="text-indent:2em;"><em>src="http://lorempixel.com/200/200/city/"</em></p>
-					</li>
-					<li>The <span class="green">alt</span> attribute:
-						<p style="text-indent:2em;"><em>alt="Picture of a city"</em></p>
-					</li>
-				</ol>
 				<pre class="apache"><code>&lt;img src="http://lorempixel.com/200/200/city/" alt="Picture of a city" /></code></pre>
 				<p><img src="http://lorempixel.com/200/200/city/" alt="Picture of a city" style="box-shadow:none;border-radius:0;"/></p>
-				<p><small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small></p>
 				<aside class="notes">Clarify what lorempixel is if you haven't already.</aside>
 			</section>
+
+      <section>
+        <h3>Anatomy of an HTML element</h3>
+        <ul>
+          <li class = "fragment">
+            <strong class="green">Container Element</strong>:
+            <pre class="apache">
+              <code>&lt;p>This is content within the opening and closing tags.&lt;/p></code>
+            </pre>
+          </li>
+          <li class = "fragment">
+            <strong class="green">Stand-Alone Element</strong>:
+            <pre class="nowrap apache">
+              <code>&lt;br /></code>
+            </pre>
+            <pre class="nowrap apache">
+              <code>&lt;img src="images/photo.jpg" /></code>
+            </pre>
+          </li>
+        </ul>
+      </section>
+
 
 			<!-- File Paths -->
 			<section>
 				<h3>File Paths</h3>
 				<p class="blue">Relative vs. absolute paths for links, images, etc.</p>
-				<ul>
-					<li>
-						<strong class="green">Relative</strong>
-						<ul>
-							<li>Relative paths change depending upon the page the link is on.
-								<ul>
-									<li><small>Links within the same directory need no path information. <code class="green">"filename.jpg"</code></small></li>
-									<li><small>Subdirectories are listed without preceding slashes. <code class="green">"images/filename.jpg"</code></small></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<strong class="green">Absolute</strong>
-						<ul>
-							<li>Absolute paths refer to a specific location of a file, including the domain. <small><code class="green">"http://www.girldevelopit.com/chapters/boston"</code></small></li>
-							<li>Typically used when pointing to a link that is not within your own domain.</li>
-						</ul>
-					</li>
-				</ul>
+        <img src="img/mbta.jpg" alt="map of the MBTA subway system"/>
 				<aside class="notes">Analogy: Relative paths are like directions, absolute are like a specific address.
 				Show example: Save an image from somewhere, then reference it in NotePad++</aside>
 			</section>
@@ -936,6 +815,17 @@ WE ARE NOW IN 53 CITIES!</p>
 				</div>
 			</section>
 
+      <section class="hide-pdf">
+        <h2>Let's Review!</h2>
+        <ul>
+          <li>What is the tag for an image?</li>
+          <li>What attribute do you use to specify the location of the image?<li>
+          <li>What is the difference between absolute and relative paths?</li>
+          <li>How do you do line breaks?</li>
+        </ul>
+      </section>
+
+
 			<!-- Let's Develop It! -->
 			<section class="hide-pdf">
 				<h2>Let's Develop It!</h2>
@@ -951,37 +841,34 @@ WE ARE NOW IN 53 CITIES!</p>
 						<p><span class="orange"><u>HTML:</u></span></p>
 						<pre class="apache">
 <code>&lt;ul>
-	&lt;li>Unordered List Item&lt;/li>
-	&lt;li>Another List Item&lt;/li>
+	&lt;li>Item 1&lt;/li>
+	&lt;li>Item 2&lt;/li>
 &lt;/ul>
 
 &lt;ol>
-	&lt;li>Ordered List Item&lt;/li>
-	&lt;li>Another List Item&lt;/li>
+	&lt;li>Item 1&lt;/li>
+	&lt;li>Item 2&lt;/li>
 &lt;/ol></code>
 						</pre>
 					</div>
 					<div class = "left" style = "width:50%">
 						<p><span class="orange"><u>Result:</u></span></p>
 						<ul style="margin-bottom:1em;">
-							<li>Unordered List Item</li>
-							<li>Another List Item</li>
+							<li>Item 1</li>
+							<li>Item 2</li>
 						</ul>
+            <br/>
 						<ol>
-							<li>Ordered List Item</li>
-							<li>Another List Item</li>
+							<li>Item 1</li>
+							<li>Item 2</li>
 						</ol>
 					</div>
 				</div>
-				<hr />
-				<small>Unordered lists (ul) are bulleted by default, while ordered lists (ol) are numbered by default.</small>
 			</section>
 			<section>
 				<h3>Common HTML Elements</h3>
 				<p class="blue">Lists in Action</p>
-				<p>Lists can be used to organize any list of items.</p>
 				<img src="img/example-lists.png" alt="Examples of lists" style="max-height:13.5em;" />
-				<p><small>You'd be surprised how often lists are used in web development.</small></p>
 			</section>
 
 			<!-- Let's Develop It! -->
@@ -994,10 +881,8 @@ WE ARE NOW IN 53 CITIES!</p>
 			<section>
 				<h3>Common HTML Elements</h3>
 				<p class="blue">Comments</p>
-				<p>You can add comments to your code that will not be seen by the browser, but only visible when viewing the page source.</p>
 				<pre class="html"><code>&lt;!-- Comment goes here --></code></pre>
 				<p>&nbsp;</p>
-				<p><small>Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</small><br /></p>
 				<pre class="html">
 <code>&lt;!-- Beginning of header -->
 &lt;div id="header">
@@ -1013,7 +898,7 @@ WE ARE NOW IN 53 CITIES!</p>
 					Commenting makes you a good person!
 				</aside>
 			</section>
-			<section>
+			<!-- <section>
 				<h3>Common HTML Elements</h3>
 				<p class="blue">Tables</p>
 				<p>Tables are a way to represent complex information in a grid format. Tables are made up of rows (<span class="green">tr</span>), which contain cells (<span class="green">th</span> for table header cells, or <span class="green">td</span> for standard table data cells).</p>
@@ -1076,7 +961,7 @@ WE ARE NOW IN 53 CITIES!</p>
 				<div class="right" style="width: 40%;">
 					<img src="img/example-characters.png" alt="Example of Characters"/>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- Next Week -->
 			<section class="hide-pdf">
