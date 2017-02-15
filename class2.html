@@ -591,18 +591,43 @@ p {
 
       <!-- More Selectors -->
       <section>
+        <h2>New Tag: Span</h2>
+        <div class="left" style = "width:60%">
+          <p><span class="orange"><u>HTML:</u></span></p>
+          <pre class="html"><code>
+&lt;p>Snap crackle &lt;span>pop&lt;/span>&lt;/p>
+          </code></pre>
+        </div>
+        <p><span class="orange"><u>CSS:</u></span></p>
+        <div>
+          <pre><code class="css">
+span {
+ background-color: red;
+}
+          </code></pre>
+        </div>
+        <div class ="clear"></div>
+      <div class="fragment">
+        <p>&nbsp;</p>
+        <p><span class="orange"><u>Result:</u></span></p>
+        <p style="color:black;">Snap crackle
+        <span style="background-color:red;">pop</span></p>
+      </div>
+
+      </section>
+
+      <section>
         <h2>More selectors, you say?</h2>
-        <aside class="notes">Rare that you'll want every div to have a black background, for instance, or every link to be the same color. Need a way to narrow that down further.</aside>
+        <aside class="notes">Rare that you'll want every img to have a black background, for instance, or every link to be the same color. Need a way to narrow that down further.</aside>
       </section>
       <section>
-        <h3>Selector: Class</h3>
-        <p>Enter <span class="blue">a period (.)</span><br />followed directly by the <span class="blue">class attribute's value</span><br />to target all elements with that class:</p>
+        <h3>Selector: Class (.)</h3>
         <div>
           <div class="left" style = "width:60%">
             <p><span class="orange"><u>HTML:</u></span></p>
             <pre class="apache"><code>
-&lt;p class="warning">Lorem ipsum&lt;/p>
-&lt;span class="warning">Dolor sit amet&lt;/p>
+&lt;h1 class="warning">Lorem ipsum&lt;/h1>
+&lt;p class="warning">Dolor sit amet&lt;/p>
             </code></pre>
           </div>
           <p><span class="orange"><u>CSS:</u></span></p>
@@ -620,13 +645,11 @@ p {
           <p><span class="orange"><u>Result:</u></span></p>
           <p style="color:red;">Lorem ipsum</p>
           <span style="color:red;">Dolor sit amet</span>
-          <p class="blue fragment"><br /><small><em>.red { }</em> in CSS corresponds to &lt;tagname class="red">&lt;/tagname> in HTML</small></p>
         </div>
       </section>
       <section>
-        <h3>Selector: Class</h3>
+        <h3>Selector: Class (.)</h3>
         <p class="blue">Using Multiple Classes</p>
-        <p>Assign multiple classes to an element by separating each class with <span class="orange">a space</span> <u>in the HTML</u>:</p>
         <div>
           <div class="left" style="width:60%">
             <p><span class="orange"><u>HTML:</u></span></p>
@@ -654,24 +677,18 @@ p {
           <p style="color:green;border-width:3px;border-style:dashed;border-color:fuchsia;">Cowabunga!</p>
           <p style="color:green;">said Michaelangelo</p>
         </div>
-        <p class="blue fragment"><small>Since the first <em>&lt;p>&lt;/p></em> element is targeted by both the <em>.green</em> and <em>.bordered</em> CSS rules, it is both green and bordered.</small></p>
         <aside class="notes">Code an example of this, where you add 'bordered' to several different elements</aside>
       </section>
       <section>
-        <h3>Selector: ID</h3>
-        <p>To target elements with a specific ID, use the <span class="blue">hashtag (#)</span>, followed by the <span class="blue">ID attribute's value</span>:</p>
+        <h3>Selector: ID (#)</h3>
+
         <div>
           <div class="left" style = "width:60%">
             <p><span class="orange"><u>HTML:</u></span></p>
             <pre class="apache"><code>
-&lt;div id="featured">
-  &lt;a href="result1.html">
-    The One Featured Search Result's Title
-  &lt;/a>
-  &lt;p>
+  &lt;p id="featured">
     A description of this search result
   &lt;/p>
-&lt;/div>
             </code></pre>
           </div>
           <p><span class="orange"><u>CSS:</u></span></p>
@@ -688,29 +705,20 @@ p {
           <p>&nbsp;</p>
           <p><span class="orange"><u>Result:</u></span></p>
           <div style="background:#F5E17F;text-align:left;">
-            <a href="#" style="color:blue;">The One Featured Search Result's Title</a>
             <p>A description of this search result</p>
           </div>
         </div>
         <aside class="notes">Mention hexadecimal codes for colors, if you haven't already</aside>
       </section>
       <section>
-        <h3>Selector: ID</h3>
+        <h3>IDs vs Classes</h3>
         <p>You can assign multiple classes to an element, but ...</p>
         <p class="fragment">ID should only apply to <span class="blue">one element</span> on the page</p>
         <p>&nbsp;</p>
-        <p class="fragment">Why? <span class="orange">IDs are unique</span></p>
         <aside class="notes">Think of ID like an element's SSN. HTML and CSS don't throw errors like Javascript -- good to get in the habit now.</aside>
       </section>
       <section>
-        <h3>IDs vs. Classes</h3>
-        <p class="blue">A Practical Example</p>
-        <aside class="notes">Raise your hand if you have dark hair. Also, code your search results example!</aside>
-      </section>
-      <section>
         <h3>Selector: Descendant</h3>
-        <p class="blue">Using Classes or IDs</p>
-        <p>The descendant and ancestor selectors don't have to be tag names; they can be classes, IDs, etc.</p>
         <div>
           <div class="left" style = "width:60%;font-size:90%">
             <p><span class="orange"><u>HTML:</u></span></p>
@@ -754,7 +762,6 @@ p {
       </section>
       <section>
         <h3>Selector: Elements with a Specific Class</h3>
-        <p>To select an element with a specific class and tag name, use the <span class="blue">tag name</span>, followed by <span class="blue">a period (.)</span>, then the <span class="blue">class attribute's value</span>:</p>
         <div>
           <div class="left" style = "width:60%">
             <p><span class="orange"><u>HTML:</u></span></p>
@@ -787,44 +794,42 @@ span.red {
         <div>
           <pre>
             <code class="css">
-.class div {
+.highlight strong {
   color: red;
 }
 
-div .class {
+strong .highlight {
   color: green;
 }
 
-div.class {
+strong.highlight {
   color: orange;
 }
             </code>
           </pre>
         </div>
 
-        <p><a href="http://codepen.io/anon/pen/zvdWgL?editors=110" target="_blank">Let's take a look &raquo;</a></p>
         <aside class="notes">
           <pre><code>
-            &lt;div>
+            &lt;p>
               &lt;span class="class">
                 1
               &lt;/span>
 
-              &lt;div class="class">
+              &lt;p class="class">
                 2
 
-                &lt;div>
+                &lt;p>
                   3
-                &lt;/div>
+                &lt;/p>
 
-              &lt;/div>
+              &lt;/p>
             &lt;/div>
           </code></pre>Rule of thumb: If there's a space --in CSS-- then the portion after the space is a descendent. If there is no space, you are combining selectors. The first part is "select any element with this class name" and the second part is "select any div". Put them together with a space and you get "select any div that is a descendant of any element with this class name".</aside>
       </section>
 
       <section>
         <h3>Cascading</h3>
-        <p class="blue"><small>What does the <span class="orange">cascading</span> in <span class="orange">C</span>ascading <span class="orange">S</span>tyle <span class="orange">S</span>heets mean?</small></p>
         <p>Styles "cascade" down until changed</p>
         <div>
           <div class="left" style = "width:60%;">
@@ -864,6 +869,16 @@ p{
 
       <!-- Let's Develop It! -->
       <section>
+        <h3>Let's Review!</h3>
+        <p>&nbsp;</p>
+        <ul>
+          <li>What is the difference between a class and an id?</li>
+          <li>What is a span?</li>
+          <li>How would you select all descendants of paragraph with class "hello"?</li>
+        </ul>
+        <aside class="notes">Do an example with 'red' or something basic.</aside>
+      </section>
+      <section>
         <h3>Let's Develop It!</h3>
         <p>&nbsp;</p>
         <ol>
@@ -890,7 +905,7 @@ p{
 			</section>
 			<section class="hide-pdf">
         <h3>Questions?</h3>
-        <h4><a href="mailto:lizs@girldevelopit.com">lizs@girldevelopit.com</a></h4>
+        <h4><a href="mailto:christinezorachapman@gmail.com">christinezorachapman@gmail.com</a></h4>
         <div style="font-size:1200%; height:100%; margin-top:20%" class="blue">?
           <div class="clear"></div>
         </div>
