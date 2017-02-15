@@ -57,25 +57,6 @@
                 </p>
             </section>
 
-			<!-- Welcome-->
-			<section class="hide-pdf">
-			  <h3>Welcome!</h3>
-			  <div class = "left-align">
-			  <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-			  <p class ="green"><br />Some "rules":</p>
-			  <ul>
-  				<li>We are here for you!</li>
-  				<li>Every question is important</li>
-  				<li>Help each other</li>
-  				<li>Have fun</li>
-			  </ul>
-				<p>&nbsp;</p>
-        <p><strong>Thank you to our wonderful TAs!</strong></p>
-				<p>Course website: <a href="http://anything.codes" target="_blank">http://anything.codes</a></p>
-				<p>Instructor contact info: <a href="mailto:lizs@girldevelopit.com">lizs@girldevelopit.com</a></p>
-			</div>
-			</section>
-
 			<!-- Anatomy of a Website -->
 			<section>
 				<h3>Anatomy of a Website</h3>
@@ -83,14 +64,12 @@
 				<p>+ <span class="green">HTML</span>: Structure</p>
 				<p>+ <span class="fragment grow highlight-blue">CSS</span>: Presentation</p>
 				<p>= <span class="fragment grow highlight-blue">Your Website</span></p>
-				<p>A website is a way to present your content to the world, using HTML to structure that content, and CSS to make it look good.</p>
 				<aside class="notes">Last week, focused on providing structure to our content with HTML. This week, adding CSS to make it look nice.</aside>
 			</section>
 
 			<!-- CSS: What Can It Do? -->
 			<section>
 				<h3>CSS: What can it do?</h3>
-				<p>All colored text, positioning, sizes</p>
 				<img src = "img/design-before-after.png">
 				<aside class="notes">Our class project</aside>
 			</section>
@@ -98,16 +77,7 @@
 			<!-- CSS: What is it? -->
 			<section>
 				<h3>CSS: What is it?</h3>
-				<ul>
-					<li>CSS stands for <span class="green">C</span>ascading <span class="green">S</span>tyle <span class="green">S</span>heets</li>
-					<li class="fragment">CSS describes how HTML elements are to be displayed when:
-						<ul>
-							<li class="fragment">on a <span class="blue">screen</span></li>
-							<li class="fragment">on <span class="blue">devices</span> (tablets, phones, etc.)</li>
-							<li class="fragment">on <span class="blue">printed paper</span></li>
-						</ul>
-					</li>
-				</ul>
+				<p> <span class="green">C</span>ascading <span class="green">S</span>tyle <span class="green">S</span>heets</p>
 				<aside class="notes">In this class, only going to cover 'screen' aspect. Intermediate, get into responsive development, which is when your page responds to the width of your device.</aside>
 			</section>
 			<section>
@@ -123,39 +93,10 @@
 				<img src="img/css.png">
 			</section>
 
-			<!-- HTML + CSS -->
-			<section>
-				<h3>HTML + CSS</h3>
-				<ul>
-					<li><span class="blue">HTML</span> structures the content:
-						<pre class="html">
-						<code>&lt;p>This paragraph should have red text.&lt;/p></code>
-						</pre>
-					</li>
-					<li class="fragment">Since <span class="blue">CSS</span> is a different language, it is kept in a different file (<span class="green">.css</span> instead of <span class="green">.html</span>). CSS says how your structured content should look:<br />
-						<pre>
-<code class="css">
-p {
-   color: red;
-}
-</code>
-						</pre></li>
-					<li class="fragment">On your <span class="blue">Website</span>, the result is:
-					<p style="color:red;">This paragraph should have red text.</p></li>
-				</ul>
-				<p><small class="fragment green"><br />Without CSS, your HTML pages would look boring &#9786;</small></p>
-				<aside class="notes">We'll go over CSS syntax shortly.</aside>
-			</section>
-
-			<!-- How does it work? -->
-			<section>
+<!-- How does it work? -->
+	<section>
 				<h3>How does it work?</h3>
-				<ol>
-					<li>You make an HTML file</li>
-					<li class="fragment">You make a CSS file that <span class="blue">describes</span> how specific HTML elements should look</li>
-					<li class="fragment">Within the <em>&lt;head>&lt;/head></em> of your HTML file, you <span class="blue">link</span> to your CSS file</li>
-					<li class="fragment">The CSS <span class="blue">searches through and selects</span> specific elements that you've said should be styled, and applies that styling</li>
-				</ol>
+        <img src="img/how-css-works.png" alt="html links to css in the head and the css searches through for selectors that match the html"/>
 			</section>
 
 			<!-- CSS Syntax -->
@@ -167,17 +108,11 @@ p {
    property: values;
 }</code></pre>
 				<p>&nbsp;</p>
-				<ul>
-					<li>A block of CSS code is a <span class="blue">rule</span></li>
-					<li class="fragment">The rule starts with a <span class="blue">selector</span></li>
-					<li class="fragment">It has sets of <span class="blue">properties</span> and <span class="blue">values</span></li>
-				</ul>
 				<aside class="notes">Don't really need to know what each portion is called, more concerned with you knowing how to use them. Selector, curly brace, property, colon, property value, semicolon. Whitespace doesn't matter.</aside>
 			</section>
 			<section>
 				<h3>CSS Syntax</h3>
 				<img src="img/css-syntax.png" alt="CSS Syntax" style="border: none; box-shadow: none;max-height:300px;"/>
-				<p>You can add multiple property-value pairs to a rule, each ending with a semicolon:</p>
 				<pre>
 <code class = "css">body {
    color: lightblue;
@@ -189,7 +124,6 @@ p {
       <!-- CSS Coding Tip #1 -->
       <section>
         <h3>CSS Coding Tip #1</h3>
-        <p>Just like HTML, CSS ignores whitespace. All you need is for each rule to be in the correct format.</p>
         <p>&nbsp;</p>
         <div>
           <div style="float:left;width:33.33%;">
@@ -223,7 +157,6 @@ p {
             </code></pre>
           </div>
           <p>&nbsp;</p>
-          <p><br />The base format of a rule is <span class="green">selector{property:value;}</span><br /><small>It doesn't matter where whitespace goes, as long as the format is correct</small></p>
         </div>
       </section>
 
@@ -242,11 +175,8 @@ p {
         <h3>Connecting CSS to HTML</h3>
         <p class="blue">1. Inline</p>
 <pre><code class="html">&lt;p style="color:red;font-size:12px;">Some text.&lt;/p></code></pre>
-        <ul style="margin-top:1em;">
-          <li style="color:red;">Not preferred <span style="font-size:110%;">&#x2717;</span></li>
-          <li>Uses the HTML attribute called <em>style</em></li>
-          <li>Difficult to use in large projects</li>
-        </ul>
+          <br/>
+          <p style="color:red;">Not preferred <span style="font-size:110%;">&#x2717;</span></p>
         <aside class="notes">We are in the HTML file now, NOT the CSS file.</aside>
       </section>
       <section>
@@ -260,12 +190,8 @@ p {
     }
   &lt;/style>
 &lt;/head></code></pre>
-        <ul style="margin-top:1em;">
-          <li style="color:red;">Not preferred <span style="font-size:110%;">&#x2717;</span></li>
-          <li>Inside <em>head</em> element</li>
-          <li>Uses <em>style</em> tag</li>
-          <li>Needs to be placed in each HTML file</li>
-        </ul>
+          <br/>
+          <p style="color:red;">Not preferred <span style="font-size:110%;">&#x2717;</span></p>
         <aside class="notes">We are in the HTML file now, NOT the CSS file.</aside>
       </section>
       <section>
@@ -274,14 +200,8 @@ p {
           <pre><code class = "html">&lt;head>
   &lt;link rel="stylesheet" href="css/styles.css" />
 &lt;/head></code></pre>
-          <ul style="margin-top:1em;">
-            <li class="green">Preferred by developers everywhere! &#10004;</p>
-            <li class="fragment">External CSS saves a lot of work by controlling the look and feel of multiple pages at once</li>
-            <li class="fragment">Easy to maintain</li>
-            <li class="fragment">Useful when working with a team</li>
-            <li class="fragment">Reduced bandwidth</li>
-            <li class="fragment">Easier for search engines to crawl your site's content</li>
-          </ul>
+            <br/>
+            <p class="green">Preferred by developers everywhere! &#10004;</p>
           <aside class="notes">Team: For content entry, inefficient to keep flipping through a style guide to see what color, font-size, etc. a certain heading should be. Instead, you can let the CSS control the styling for you. Also introduce concept of 'separation of concerns'. Bandwidth: caching, so downloaded once. Divide and conquer!</aside>
       </section>
       <section>
@@ -293,7 +213,7 @@ p {
       <!-- Let's Develop It! -->
       <section class="hide-pdf">
         <h3>Let's Develop It!</h3>
-        <p><img src="img/folderstructure1.png" /></p>
+        <p><img src="img/css-folder-structure.png" width="500px"/></p>
         <ol>
           <li>Make a copy of your <span class="orange">class1</span> folder and call it <span class="orange">class2</span></li>
           <li>Create a new CSS file and save it as <span class="orange">styles.css</span> within the <span class="orange">class2/css</span> folder</li>
@@ -306,27 +226,33 @@ p {
 			<!-- 1. Styling: The Element Selector, Text Color, & Backgrounds -->
 			<section>
 				<h3>Selector: Element</h3>
-				<p>Enter the element's <span class="orange">tag name</span> to target those elements:</p>
+        <pre><code class = "html">
+            <p>This is a sample paragraph</p>
+        </code></pre>
+        <br/>
+
 				<pre><code class = "css">
 p {
    color: aqua;
 }
 				</code></pre>
-				<p class="blue"><br /><small><em>p { }</em> in CSS corresponds to &lt;p>&lt;/p> in HTML</small></p>
-				<div class="fragment">
-					<p>The following selects all image elements:</p>
-					<pre class=""><code class = "css">
-img {
-   width: 600px;
-}
-					</code></pre>
-					<p class="blue"><br /><small><em>img { }</em> in CSS corresponds to &lt;img /> in HTML</small></p>
-				</div>
-        <aside class="notes">There are other selectors that we'll get into later. Start with this one so we can style different elements as we move along. CODE THE P AND IMG EXAMPLES FOR THEM.</aside>
+      </section>
+
+        <section>
+          <h3>Selector: Element</h3>
+          <pre><code class = "html">
+              <h1>This is my title</h1>
+          </code></pre>
+          <br/>
+
+  				<pre><code class = "css">
+  h1 {
+     color: blue;
+  }
+  				</code></pre>
 			</section>
 			<section>
 				<h3>Property: <em>color</em></h3>
-				<p>The <span class="orange">color</span> property changes the color of the text.</p>
 				<pre><code class = "css">
 p {
    color: red;
@@ -335,20 +261,12 @@ p {
    color: rgba(255, 0, 0, 0.7);
 }
 				</code></pre>
-				<p class="left-align blue" style="margin-left:1em;margin-top:20px">Options:</p>
-				<ul style="display:block;margin-left:2em;font-size:80%;">
-					<li>Color name (e.g. <em>white</em>)</li>
-					<li>Hexadecimal value (e.g. <em>#FFFFFF</em> or <em>#FFF</em>)</li>
-					<li>RGB value (e.g. <em>rgb(255, 255, 255)</em> )</li>
-					<li>RGBA value for opacity (e.g. <em>rgba(255, 255, 255, 0.5)</em> )</li>
-				</ul>
 				<p style="margin-top:20px;">There are 140 reserved color names, including: <font color="black">black</font>, <font color="blue">blue</font>, <font color="aqua">aqua</font>, <font color="fuchsia">fuchsia</font>, <font color="grey">grey</font>, <font color="green">green</font>, <font color="lime">lime</font>, <font color="maroon">maroon</font>, <font color="navy">navy</font>, <font color="olive">olive</font>, <font color="purple">purple</font>, <font color="red">red</font>, and <font color="teal">teal</font><br /><a href="http://www.w3schools.com/cssref/css_colornames.asp" target="_blank">See a full list &raquo;</a></p>
 				<!-- Note to self: Make a pull request for this slide, as it is out-of-date in the main repo -->
 				<aside class="notes">NOT EXPECTED TO KNOW HOW THIS WORKS: Lots of ways to refer to colors other than the color name.  Mention that, when you see the same property on different lines, that just means they're different settings you can use for that property.<br />Mention that the RGBA controls opacity, while RGB is solid. Can shorten hexadecimals to three characters if the R/G/B channel value for each is the same. For example, #ffcc00 can become #fc0. Hexadecimal values are base-16.</aside>
 			</section>
 			<section>
 				<h3>Property: <em>background-color</em></h3>
-				<p>The <span class="orange">background-color</span> property changes the color of the background</p>
 				<pre><code class = "css">
 body {
    background-color: black;
@@ -361,11 +279,10 @@ body {
 			</section>
       <section>
         <h3>Selector: Descendant</h3>
-        <p>To target elements that are descended from another element, use a <span class="blue">selector for the ancestor</span>, then <span class="blue">a space</span>, then a <span class="blue">selector for the descendant</span>:</p>
         <div>
           <div class="left" style = "width:55%">
             <p><span class="orange"><u>HTML:</u></span></p>
-            <pre class="apache"><code>&lt;div>
+            <pre class="apache"><code>&lt;body>
   Buy one get one
   &lt;strong>free&lt;/strong>
   &lt;p>
@@ -373,12 +290,12 @@ body {
     &lt;strong>today&lt;/strong>
     only
   &lt;/p>
-&lt;/div></code></pre>
+&lt;/body></code></pre>
           </div>
           <p><span class="orange"><u>CSS:</u></span></p>
           <div>
             <pre><code class="css">
-div strong {
+p strong {
   background-color: yellow;
   color: blue;
 }
@@ -390,7 +307,7 @@ div strong {
           <p>&nbsp;</p>
           <p><span class="orange"><u>Result:</u></span></p>
           <div>
-            Buy one get one <strong style="background:yellow;color:blue;text-transform: uppercase;">free</strong>
+            Buy one get one free
             <p>Offer valid <strong style="background:yellow;color:blue;">today</strong> only</p>
           </div>
         </div>
@@ -410,6 +327,18 @@ body {
 				<aside class="notes">Applying a background to the body element is how you should set your entire page's background. Show them how it can work alongside the color property -- google 'transparent texture background'. EMPHASIZE STARTING FILE LOCATION AND WHAT ../ MEANS.</aside>
 			</section>-->
 
+
+
+      <section>
+        <h3>Let's Review!</h3>
+        <p class="blue">Let's get stylin'</p>
+        <ul style="margin-top:1em;">
+          <li>What property changes the text color?</li>
+          <li>How do you set the background color of a paragraph?</li>
+          <li>How do descendant selectors work?</li>
+        </ul>
+      </section>
+
       <!-- Let's Develop It! -->
       <section>
         <h3>Let's Develop It!</h3>
@@ -424,7 +353,6 @@ body {
 			<!-- 2. Styling: Fonts -->
 			<section>
 				<h3>Property: <em>font-family</em></h3>
-				<p>The <span class="orange">font-family</span> property defines which font is used</p>
 				<pre><code class = "css">
 body {
    font-family: Helvetica;
@@ -433,9 +361,9 @@ body {
    font-family: sans-serif;
 }
 				</code></pre>
-				<p class="blue"><small><br />If a font name is more than one word, it goes in quotation marks (like "Helvetica Neue").</small></p>
 				<div class="fragment" style="font-size:90%;">
-					<p><span class="green">Preferred  &#10004;</span>: Use a prioritized list. The page will load whichever font it recognizes first in the list:</p>
+          <br/>
+					<p><span class="green">Preferred  &#10004;</span></p>
 					<pre><code class = "css">
 body {
    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
@@ -447,7 +375,6 @@ body {
       </section>
       <section>
         <h3>Property: <em>font-size</em></h3>
-        <p>The <span class="orange">font-size</span> property specifies the size of the font.</p>
         <pre><code class = "html">
 p {
   font-size: 16px;
@@ -455,14 +382,6 @@ p {
   font-size: 100%;
 }
         </code></pre>
-        <p class="left-align blue" style="margin-left:1em;margin-top:20px">Options include:</p>
-				<ul style="display:block;margin-left:2em;font-size:80%;">
-					<li>Pixels</li>
-					<li>"em" Units</li>
-					<li>Percentages</li>
-				</ul>
-        <p>&nbsp;</p>
-        <p class="fragment">The default <em>&lt;body>&lt;/body></em> size is 16px<br /> Usually <strong>16px = 1em = 100%</strong></p>
         <aside class="notes">Mention default styling. There's a reason why, last week, our links were rendered as blue, the headings larger, and 'strong' elements as bold, etc. All of that can be overridden with CSS, which is what we're going to do in this class.</aside>
       </section>
       <section>
@@ -489,7 +408,6 @@ p {
       </section>
       <section>
         <h3>Properties:<br /><em>font-style</em> and <em>font-weight</em></h3>
-        <p>The <span class="orange">font-style</span> property sets italic styling for text<br />The <span class="orange">font-weight</span> property sets text boldness</p>
         <pre><code class = "css">
 h4 {
   font-style: normal;
@@ -503,7 +421,6 @@ h4 {
       </section>
       <section>
         <h3>Property: <em>font-variant</em></h3>
-        <p>Use <span class="orange">font-variant</span> to make <em>small-caps</em> text</p>
         <pre><code class = "css">
 h1 {
   font-variant: normal;
@@ -515,7 +432,6 @@ h1 {
       </section>
       <section>
         <h3>Property: <em>line-height</em></h3>
-        <p>The <span class="orange">line-height</span> property specifies text line height</p>
         <pre><code class = "css">
 p {
   font-size: 10px;
@@ -567,7 +483,6 @@ p {
       </section>-->
       <section>
         <h3>Property: <em>text-transform</em></h3>
-        <p>Use <span class="orange">text-transform</span> to make text lowercase, capitalized, or uppercase</p>
         <pre><code class = "css">
 h1 {
   text-transform: lowercase;
@@ -583,7 +498,6 @@ h1 {
       </section>
       <section>
         <h3>Property: <em>text-align</em></h3>
-        <p>The <span class="orange">text-align</span> property aligns text to the left, right, or center</p>
         <pre><code class = "css">
 p {
   text-align: left;
@@ -593,6 +507,15 @@ p {
         </code></pre>
       </section>
 
+      <section>
+        <h3>Let's Review</h3>
+        <ul>
+          <li>What is the difference between px and em?</li>
+          <li>What font properties can we use?</li>
+          <li>What text properties can we use?</li>
+          <li>How can we align text?</li>
+        </ul>
+      </section>
       <!-- Let's Develop It! -->
       <section>
         <h3>Let's Develop It!</h3>
@@ -606,6 +529,64 @@ p {
           <li>Text alignment</li>
         </ol>
         <aside class="notes">A whole lot! Don't need to use all. Mention that you can append this styling to the same rule, and code an example.</aside>
+      </section>
+
+      <section>
+        <h2>Styling images</h2>
+        <pre><code class = "css">
+            img {
+              width: 200px;
+              width: 20em;
+              width: 20%;
+              height: 100px;
+              height: 10em;
+              height: 10%;
+            }
+        </code></pre>
+      </section>
+      <section>
+        <h2>Borders</h2>
+
+        <img src="img/red-panda-border.png" alt="red panda with pink border" width="500px"/>
+        <pre><code class = "css">
+            img {
+              border-width: 5px;
+              border-color: pink;
+            }
+        </code></pre>
+
+      </section>
+
+      <section>
+        <h2>Borders</h2>
+        <pre><code class = "css">
+            img {
+              border-style: none;
+              border-style: dashed;
+              border-style: solid;
+              border-style: dotted;
+              border-style: double;
+            }
+        </code></pre>
+
+      </section>
+
+      <section>
+        <h3>Let's Review</h3>
+        <ul>
+          <li>What properties do we know for images?</li>
+          <li>What do they do?</li>
+        </ul>
+      </section>
+      <!-- Let's Develop It! -->
+      <section>
+        <h3>Let's Develop It!</h3>
+        <p>Add the following to your imgs:</p>
+        <ol style="margin-top:1em;">
+          <li>width</li>
+          <li>height</li>
+          <li>borders</li>
+        </ol>
       </section>
 
       <!-- More Selectors -->
