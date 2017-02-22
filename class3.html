@@ -7,7 +7,7 @@
     <title>Girl Develop It - Intro to HTML + CSS, Class 3</title>
 
     <meta name="description" content="Girl Develop It's Intro to HTML and CSS course, customized by Liz Shaw">
-    <meta name="author" content="Liz Shaw">
+    <meta name="author" content="Christine Chapman">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -59,77 +59,172 @@
 
       <!-- Recapping -->
       <section>
-        <h3>Recap</h3>
-        <p class="blue">A quick file path exercise</p>
-        <pre class="fragment"><code class="html">
-&lt;!doctype html>
-&lt;html>
-
-  &lt;head>
-    &lt;link href="pointB.css" rel="stylesheet" />
-  &lt;/head>
-
-  &lt;body>
-  &lt;/body>
-
-&lt;/html>
-        </code></pre>
-        <p class="fragment"><br />The <span class="green">rel</span> attribute stands for <span class="green">relationship</span>, since it specifies the relationship between the current document (<span class="orange">the HTML</span>) and the linked document/resource (<span class="orange">the CSS</span>)</p>
+        <h3>Recap: Relative Paths</h3>
+        <img src="img/relative-path-1.png" width="400px"/>
+          <pre><code class="html">
+      &lt;link href="style.css" rel="stylesheet" />
+          </code></pre>
       </section>
+
       <section>
-        <h3>Recap</h3>
-        <p>
-          <a href="/gdi-intro-html-css/in-class-exercises/class3/pointA.html" target="_blank">A quick file path exercise &raquo;</a>
-        </p>
-
-        <table class="data compact">
-          <tr>
-            <th>File Path</th>
-            <th>What it means</th>
-          </tr>
-          <tr>
-            <td>
-              &lt;link href="<span class="blue">pointB.css</span>" rel="stylesheet" />
-            </td>
-            <td>
-              pointB.css is located in the current folder
-            </td>
-          </tr>
-          <tr>
-            <td>
-              &lt;link href="<span class="blue">css/pointB.css</span>" rel="stylesheet" />
-            </td>
-            <td>
-              pointB.css is located in a folder called <span class="green">css</span>. The <span class="green">css</span> folder is located in the current folder.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              &lt;link href="<span class="blue">css/other/pointB.css</span>" rel="stylesheet" />
-            </td>
-            <td>
-              pointB.css is located in a folder called <span class="green">other</span> that is located in a folder called <span class="green">css</span> that is located in the current folder.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              &lt;link href="<span class="blue">../pointB.css</span>" rel="stylesheet" />
-            </td>
-            <td>
-              pointB.css is located in a folder one level up from the current folder
-            </td>
-          </tr>
-          <tr>
-            <td>
-              &lt;link href="<span class="blue">../../pointB.css</span>" rel="stylesheet" />
-            </td>
-            <td>
-              pointB.css is located in a folder two levels up from the current folder
-            </td>
-          </tr>
-        </table>
-        <p><br /><small>A <span class="green">folder</span> is also called a <span class="green">directory</span></small></p>
+        <h3>Recap: Relative Paths</h3>
+        <img src="img/relative-path-2.png" width="400px"/>
+          <pre><code class="html">
+      &lt;link href="css/style.css" rel="stylesheet" />
+          </code></pre>
       </section>
+
+      <section>
+        <h3>Recap: Relative Paths</h3>
+        <img src="img/relative-path-3.png" width="400px"/>
+          <pre><code class="html">
+      &lt;img src="panda.png"/>
+          </code></pre>
+      </section>
+
+      <section>
+        <h3>Recap: Relative Paths</h3>
+        <img src="img/relative-path-4.png" width="400px"/>
+          <pre><code class="html">
+      &lt;img src="img/panda.png"/>
+          </code></pre>
+      </section>
+
+      <section>
+				<h3>Recap: Selectors</h3>
+        <pre><code class = "html">
+            <p>This is a sample paragraph</p>
+        </code></pre>
+        <br/>
+
+				<pre><code class = "css">
+p {
+   color: aqua;
+}
+				</code></pre>
+      </section>
+
+      <section>
+				<h3>Recap: Classes</h3>
+        <pre><code class = "html">
+            <p class="warning">This is a warning!</p>
+        </code></pre>
+        <br/>
+
+				<pre><code class = "css">
+.warning {
+   color: red;
+   background-color: black;
+}
+				</code></pre>
+      </section>
+
+      <section>
+        <h3>Recap: Ids</h3>
+        <pre><code class = "html">
+            <p id="prompt">This is a prompt</p>
+        </code></pre>
+        <br/>
+
+        <pre><code class = "css">
+#prompt {
+   color: white;
+   font-size: 20px;
+}
+        </code></pre>
+      </section>
+
+      <section>
+        <pre class="apache"><code>
+          &lt;ul id="intro">
+          &lt;li>
+          We are an
+          &lt;span class="fancy-text">amazing&lt;/span>
+          team of developers
+          &lt;/li>
+          &lt;li>
+          Located in
+          &lt;span class="fancy-text">beautiful&lt;/span>
+          Cambridge, MA
+          &lt;/li>
+          &lt;/ul></code></pre>
+          <br/>
+
+          <pre class="css"><code>
+            ul li {
+              color: blue;
+            }
+          </code></pre>
+      </section>
+
+      <section>
+        <pre class="apache"><code>
+          &lt;ul id="intro">
+          &lt;li>
+          We are an
+          &lt;span class="fancy-text">amazing&lt;/span>
+          team of developers
+          &lt;/li>
+          &lt;li>
+          Located in
+          &lt;span class="fancy-text">beautiful&lt;/span>
+          Cambridge, MA
+          &lt;/li>
+          &lt;/ul></code></pre>
+          <br/>
+
+          <pre class="css"><code>
+            #intro li {
+              color: blue;
+            }
+          </code></pre>
+      </section>
+
+      <section>
+        <pre class="apache"><code>
+          &lt;ul id="intro">
+          &lt;li>
+          We are an
+          &lt;span class="fancy-text">amazing&lt;/span>
+          team of developers
+          &lt;/li>
+          &lt;li>
+          Located in
+          &lt;span class="fancy-text">beautiful&lt;/span>
+          Cambridge, MA
+          &lt;/li>
+          &lt;/ul></code></pre>
+          <br/>
+
+          <pre class="css"><code>
+            li .fancy-text {
+              color: blue;
+            }
+          </code></pre>
+      </section>
+
+      <section>
+        <pre class="apache"><code>
+          &lt;ul id="intro">
+          &lt;li>
+          We are an
+          &lt;span class="fancy-text">amazing&lt;/span>
+          team of developers
+          &lt;/li>
+          &lt;li>
+          Located in
+          &lt;span class="fancy-text">beautiful&lt;/span>
+          Cambridge, MA
+          &lt;/li>
+          &lt;/ul></code></pre>
+          <br/>
+          <pre class="css"><code>
+            span.fancy-text {
+              color: blue;
+            }
+          </code></pre>
+      </section>
+
 
 	  <!-- Our Class Project -->
 		<section>
@@ -141,80 +236,16 @@
 			</small></p>
 		</section>
 
-      <!-- Let's Develop It! -->
-      <section>
-        <h3>Get Started: Folder Structure</h3>
-        <div>
-          <div class="left" style="width:50%;">
-            <p class="left-align">Go ahead and create your folders</p>
-            <p class="left-align">Ignore the HTML and CSS files for now</p>
-          </div>
-          <div class="right">
-            <img src="img/folderstructure-project.png" alt="The project folder structure" />
-          </div>
-        </div>
-      </section>
-      <section>
-        <h3>Get Started: Images</h3>
-		<img src="img/folderstructure-project-images.png" alt="The project folder structure" />
-        <ol>
-          <li>Go to <a href="http://tinyurl.com/gdiboston">http://tinyurl.com/gdiboston</a> to download images.zip<!--http://anything.codes/gdi-intro-html-css/images.zip--></li>
-          <li>Open images.zip<ul><li>If you're using Windows, 'Extract' images.zip</li></ul></li>
-		  <li>Place the unzipped images in the 'project/images' folder you just created</li>
-        </ol>
-      </section>
-      <section>
-				<h3>Get Started: Files</h3>
-				<ol>
-					<li>Open your text editor and create a new file.</li>
-					<li>Save it as index.html in the 'project' folder you created earlier.</li>
-					<li>Add the fundamental structure (a doctype, head, title and body).</li>
-          <li>Create a new file in your text editor. Save it as styles.css in the 'project/css' folder you created earlier.</li>
-				</ol>
-				<img src="img/folderstructure-project.png" alt="Folder Structure" />
-	  </section>
 
 	  <section data-background="#f05b62">
                 <h1 style="color: #fafafa;">What now?</h1>
             </section>
 
-		  <!-- The display Property -->
-			<section>
-				<h3>The <em>display</em> Property</h3>
-        <p class="blue">Inline vs. Block</p>
-        <pre><code class="css">
-selector {
-  display: inline;
-  display: block;
-}
-        </code></pre>
-			</section>
       <section>
-        <h3>The <em>display</em> Property</h3>
-        <p class="blue">Inline vs. Block</p>
-        <div>
-          <div class="left" style="width: 50%; text-align: left;">
-            <div class="fragment">
-              <p>So far, we have mostly seen <span class="green">"block"</span> elements</p>
-              <p>They appear on the next line, like paragraphs</p>
-            </div>
-            <br><br>
-            <div class="fragment">
-              <p>There are also <span class="green">"inline"</span> elements</p>
-              <p>They appear on the same line that they are written on</p>
-            </div>
-          </div>
-          <div class="right fragment">
-          	<img src="img/blockinline.png" alt="example of inline and block elements">
-          </div>
-        </div>
-      </section>
-      <section>
-        <h3>The <em>display</em> Property</h3>
-        <p class="blue">Inline vs. Block</p>
-        <p data-height="268" data-theme-id="0" data-slug-hash="RWjLrR" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/RWjLrR/'>Inline vs. Block</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-        <p><span class="green">Block elements</span> push sibling elements to another line. <span class="green">Inline elements</span> allow sibling elements to sit to their right and left.</p>
-        <p class="blue fragment"><small>Click 'Edit on CodePen' to edit the above code.<br />(Don't worry, your changes can't overwrite anything!)</small></p>
+        <h3>Inline vs. Block</h3>
+          	<img src="img/blockinline.png" alt="example of inline and block elements"/>
+            <br/>
+            <a href='http://codepen.io/anythingcodes/pen/RWjLrR/'>Example</a>
       </section>
 
       <!-- Important Display Differences -->
@@ -265,7 +296,7 @@ selector {
       <!-- Other inline and block elements -->
       <section>
         <h3>Default Display Values</h3>
-        <p>HTML elements have default <span class="green">display</span> values that the browser uses</p>
+        <!-- <p>HTML elements have default <span class="green">display</span> values that the browser uses</p> -->
         <ul>
           <li class="fragment"><span class="orange">Inline Elements:</span>
             <ul>
@@ -290,27 +321,60 @@ selector {
       <!-- The span Element -->
       <section>
         <h3>Inline Elements</h3>
-        <p class="blue">Example: &lt;span></p>
-        <ul>
-          <li class="fragment">&lt;span> is an <span class="green">inline</span> element: Each new span is rendered next to each other and only wraps when it reaches the edge of the container element</li>
-          <li class="fragment">Can be used to apply styles to text inline so as not to break the flow of content</li>
-        </ul>
+        <div>
+          <pre class="apache">
+            <code>
+              <p>CSS makes it easy to
+                <span class="tomato">notice</span>
+                inline elements.</p>
+            </code>
+          </pre>
+        </div>
+        <div>
+          <pre class="css">
+            <code>
+              .tomato {
+              	color: tomato;
+              	text-transform: uppercase;
+              }
+            </code>
+          </pre>
+        </div>
+
         <div class="fragment">
-          <p data-height="268" data-theme-id="0" data-slug-hash="rOYYex" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/rOYYex/'>Inline Element</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+          <p>
+          CSS makes it easy to <span style="color: tomato">NOTICE</span> inline elements.
+        </p>
         </div>
       </section>
 
       <!-- The div Element -->
       <section>
         <h3>Block Elements</h3>
-        <p class="blue">Example: &lt;div></p>
-        <ul>
-          <li class="fragment">The &lt;div> is a <span class="green">block</span> element</li>
-          <li class="fragment">It pushes sibling elements to another line</li>
-        </ul>
+        <div>
+          <pre class="apache">
+            <code>
+              <p>CSS makes it easy to </p>
+              <div class="tomato">notice</div>
+              <p>inline elements.</p>
+            </code>
+          </pre>
+        </div>
+        <div>
+          <pre class="css">
+            <code>
+              .tomato {
+                color: tomato;
+                text-transform: uppercase;
+              }
+            </code>
+          </pre>
+        </div>
+
         <div class="fragment">
-          <p data-height="268" data-theme-id="0" data-slug-hash="WQXXwW" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/WQXXwW/'>Block Element</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-		  <p><a href="http://codepen.io/anythingcodes/pen/PPEaKW?editors=110" target="_blank">Forcing a block-level div's 'display' property to 'inline' &raquo;</a></p>
+          <p>
+          CSS makes it easy to <div style="color: tomato">NOTICE</div> block elements.
+        </p>
         </div>
       </section>
 
@@ -318,12 +382,8 @@ selector {
       <section>
         <h3>Grouping Elements with &lt;div>s</h3>
         <ul>
-          <li class="fragment">The &lt;div> element can also be used to group similarly-styled elements together</li>
-          <li class="fragment"><span class="green">For example:</span> What if we want the first 2 paragraphs of a section to be right-aligned, purple, and bold, but we don't want any other paragraphs to be right-aligned?
-            <ul>
-              <li class="fragment">We would wrap them in a &lt;div> element to style them differently</li>
-              <li class="fragment"><a href="http://codepen.io/anythingcodes/pen/ojoGQY?editors=110" target="_blank">Example (before) &raquo;</a></li>
-			  <li class="fragment"><a href="http://codepen.io/anythingcodes/pen/GpyGMj?editors=110" target="_blank">Example (after) &raquo;</a></li>
+              <li><a href="http://codepen.io/anythingcodes/pen/ojoGQY?editors=110" target="_blank">Example (before) &raquo;</a></li>
+			  <li><a href="http://codepen.io/anythingcodes/pen/GpyGMj?editors=110" target="_blank">Example (after) &raquo;</a></li>
             </ul>
           </li>
         </ul>
@@ -332,91 +392,11 @@ selector {
       <!-- Block-Level Elements -->
       <section>
         <h3>Block-Level Elements in Layouts</h3>
-        <p>Block-level elements are used to divide or section content within an HTML page</p>
-        <p class="fragment">
+        <p>
           <img src="img/divided-page.jpg" alt="A page divided up into sections" />
         </p>
       </section>
-      <section>
-        <h3>Block-Level Elements in Layouts</h3>
-        <p class="fragment">Group other elements within dividing elements to format them differently with CSS</p>
-        <div class="fragment">
-          <p data-height="268" data-theme-id="0" data-slug-hash="xwPXYG" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/xwPXYG/'>Layouts & Sections</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-        </div>
-      </section>
-      <section>
-        <h3>Block-Level Elements in Layouts</h3>
-        <p class="blue">Common Examples:</p>
-        <div>
-          <div class="left">
-            <ul>
-              <li>&lt;div></li>
-              <li>&lt;section></li>
-              <li>&lt;nav></li>
-              <li>&lt;main></li>
-              <li>&lt;aside></li>
-              <li>&lt;article></li>
-              <li>&lt;header></li>
-              <li>&lt;footer></li>
-            </ul>
-          </div>
-          <div class="right">
-            <p>
-              <img src="img/divided-page.jpg" alt="A page divided up into sections" />
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <!-- Let's Develop It! -->
-      <section>
-        <h2>Let's Develop It!</h2>
-        <p>Let's create block-level elements to separate content into different sections on our page</p>
-		<p><br /><small>
-			<a href="img/design.png" target="_blank">View design image &raquo;</a><br />
-			<a href="img/project.psd">Download PSD (optional; requires Photoshop) &raquo;</a>
-		</small></p>
-      </section>
-
-      <!-- Pseudoclasses for Links -->
-      <section>
-        <h3>Pseudoclasses for Links</h3>
-        <p>Changing the format of a link when you hover over it is accomplished by using <span class="green">pseudoclasses</span></p>
-        <pre><code class="html">
-selector:pseudoclass {
-  property: value;
-}
-        </code></pre>
-        <p class="fragment">CSS pseudoclasses are used to add special effects to some selectors</p>
-        <pre class="fragment"><code class="html">
-a:hover {
-  color: #F0C042;
-}
-        </code></pre>
-      </section>
-      <!--<section>
-        <h3>Pseudoclasses for Links</h3>
-        <pre><code class="html">
-a:hover {
-  color: #F0C042;
-}
-a:active {
-  color: orange;
-}
-a:visited {
-  color: purple;
-}
-        </code></pre>
-        <p><br /><small><span class="green">Note:</span> a:active <strong>must</strong> come after a:hover in the CSS definition in order to be effective!</small></p>
-        <p data-height="268" data-theme-id="0" data-slug-hash="Vvryeq" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/Vvryeq/'>Pseudoclasses for Links</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-        <p class="blue fragment"><small>Click 'Edit on CodePen' to edit the above code.<br />(Don't worry, your changes can't overwrite anything!)</small></p>
-      </section>-->
-
-      <!-- Let's Develop It! -->
-      <section>
-        <h2>Let's Develop It!</h2>
-        <p>Let's add a default link color and hover color to your links. Let's also add a font-family style to the body.</p>
-      </section>
 
       <!-- CSS Box Model -->
       <section>
@@ -440,14 +420,17 @@ a:visited {
         </p>
       </section>
 
+      <section>
+        <h3>CSS Box Model</h3>
+        <p class="blue">Another Example</p>
+        <p>
+          <img src="img/border-padding-margin.png" alt="A box example" />
+        </p>
+      </section>
+
       <!-- Padding -->
       <section>
         <h3>Padding</h3>
-        <ul>
-          <li>Space between the border and the content</li>
-          <li>Adds to the total width of the box</li>
-          <li>Same background color as the content</li>
-        </ul>
         <p>
           <img src="img/box-model.png" alt="The Box Model" />
         </p>
@@ -471,59 +454,13 @@ selector {
       </section>
       <section>
         <h3>Padding</h3>
-        <div class="fragment">
-          <p>Four values:</p>
-          <pre><code class="css">
-selector {
-  padding: top right bottom left;
-}
-          </code></pre>
-        </div>
-        <div class="fragment">
-          <p>Two values:</p>
-          <pre><code class="css">
-selector {
-  padding: topAndBottom leftAndRight;
-}
-          </code></pre>
-        </div>
-        <div class="fragment">
-          <p>One value:</p>
-          <pre><code class="css">
-selector {
-  padding: all;
-}
-          </code></pre>
-        </div>
-      </section>
-      <section>
-        <h3>Padding</h3>
-        <p class="blue">A Mnemonic for Four Values</p>
-        <div class="fragment">
-          <p>10px on top, 5px on right, 3px on bottom, 15px on left:</p>
-          <pre><code class="css">
-div {
-  padding: 10px 5px 3px 15px;
-}</code></pre>
-          <p>
-            <img src="img/trouble.gif" alt="Trouble Shorthand" />
-          </p>
-        </div>
-      </section>
-      <section>
-        <h3>Padding</h3>
         <p data-height="268" data-theme-id="0" data-slug-hash="YyEEvj" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/YyEEvj/'>Padding</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
       </section>
 
       <!-- Border -->
       <section>
         <h3>Border</h3>
-        <ul>
-          <li>The edge around the box, specified as "thickness, style, color"</li>
-        </ul>
-        <p>
-          <img src="img/box-model.png" alt="The Box Model" />
-        </p>
+        <img src="img/red-panda-border.png" width="500px" alt="Red panda image with pink border" />
       </section>
       <section>
         <h3>Border</h3>
@@ -546,38 +483,6 @@ selector {
 }
           </code></pre>
         </div>
-      </section>
-      <section>
-        <h3>Border</h3>
-        <div class="fragment">
-          <p>A solid red border:</p>
-          <pre><code class="css">
-selector {
-  border: 1px solid red;
-}
-          </code></pre>
-        </div>
-        <div class="fragment">
-          <p>A thick dotted black top border:</p>
-          <pre><code class="css">
-selector {
-  border: 4px dotted black;
-}
-          </code></pre>
-        </div>
-        <div class="fragment">
-          <p>Two different border styles:</p>
-          <pre><code class="css">
-selector {
-  border-top: 1px solid green;
-  border-bottom: 4px dashed purple;
-}
-          </code></pre>
-        </div>
-      </section>
-      <section>
-        <h3>Border</h3>
-        <p data-height="268" data-theme-id="0" data-slug-hash="jbaaeP" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/jbaaeP/'>Border</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
       </section>
 
       <!-- Margin -->
@@ -609,67 +514,20 @@ selector {
       </section>
       <section>
         <h3>Margin</h3>
-        <div class="fragment">
-          <p>Four values:</p>
-          <pre><code class="css">
-selector {
-  margin: top right bottom left;
-}
-          </code></pre>
-        </div>
-        <div class="fragment">
-          <p>Two values:</p>
-          <pre><code class="css">
-selector {
-  margin: topAndBottom leftAndRight;
-}
-          </code></pre>
-        </div>
-        <div class="fragment">
-          <p>One value:</p>
-          <pre><code class="css">
-selector {
-  margin: all;
-}
-          </code></pre>
-        </div>
-      </section>
-      <section>
-        <h3>Margin</h3>
-        <p class="blue">A Mnemonic for Four Values</p>
-        <p class="fragment green"><small>The same mnemonic!</small></p>
-        <div class="fragment">
-          <p>10px on top, 5px on right, 3px on bottom, 15px on left:</p>
-          <pre><code class="css">
-div {
-  margin: 10px 5px 3px 15px;
-}</code></pre>
-          <p>
-            <img src="img/trouble.gif" alt="Trouble Shorthand" />
-          </p>
-        </div>
-      </section>
-      <section>
-        <h3>Margin</h3>
         <p data-height="400" data-theme-id="0" data-slug-hash="yYPPQJ" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/yYPPQJ/'>Margin</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-      </section>
-
-      <!-- Let's Develop It! -->
-      <section>
-        <h2>Let's Develop It!</h2>
-        <p>Let's add some padding, margins, and a border to the &lt;h3>s in our project</p>
       </section>
 
       <!-- Auto Margin -->
       <section>
         <h3>Auto Margin</h3>
-        <p>If a margin is set to <span class="orange">auto</span> on a box that has width, the margins will take up as much space as possible</p>
+        <img src="img/centered-image.png" width="500px"/>
         <div class="fragment">
           <p class="blue">Centered</p>
           <pre><code class="css">
-selector {
+img {
   margin: auto;
   width: 300px;
+  display: block;
 }
           </code></pre>
         </div>
@@ -688,21 +546,14 @@ selector {
       <!-- Property: width -->
       <section>
         <h3>Property: <em>width</em></h3>
-        <p>Sets the width of an element</p>
         <p class="fragment">Does not include padding or borders, since those add to the width</p>
         <p class="fragment"><span class="green">Remember:</span> <u class="fragment"> block </u> elements respect width, while <u class="fragment"> inline </u> elements do not</p>
       </section>
 
-      <!-- Let's Develop It! -->
-      <section>
-        <h2>Let's Develop It!</h2>
-        <p>Let's center our &lt;h3>s and &lt;section>s</p>
-      </section>
 
       <!-- Property: height -->
       <section>
         <h3>Property: <em>height</em></h3>
-        <p>Sets the height of an element</p>
         <p class="fragment">Does not include padding or borders, since those add to the height</p>
         <p class="fragment"><span class="green">Remember:</span> <u class="fragment"> block </u> elements respect height, while <u class="fragment"> inline </u> elements do not</p>
       </section>
@@ -731,19 +582,69 @@ selector {
             <!--<td><span class="green">&#10004;</span></td>-->
           </tr>
         </table>
-        <p class="fragment"><small>Inline elements respect top and bottom padding, but it is relative to the baseline.</small></p>
+        <!-- <p class="fragment"><small>Inline elements respect top and bottom padding, but it is relative to the baseline.</small></p> -->
         <!--<p>If it's a rectangle, it's a 'block' element.</p>-->
+      </section>
+
+      <section>
+        <h3>Using the Inspector</h3>
+      </section> 
+
+      <!-- Pseudoclasses for Links -->
+      <section>
+        <h3>Pseudoclasses for Links</h3>
+        General Idea:
+        <pre><code class="html">
+selector:pseudoclass {
+  property: value;
+}
+        </code></pre>
+        <br/>
+        <div class="fragment">
+          Example:
+          <pre ><code class="html">
+  a:hover {
+    color: #F0C042;
+  }
+          </code></pre>
+      </div>
+      </section>
+      <!--<section>
+        <h3>Pseudoclasses for Links</h3>
+        <pre><code class="html">
+a:hover {
+  color: #F0C042;
+}
+a:active {
+  color: orange;
+}
+a:visited {
+  color: purple;
+}
+        </code></pre>
+        <p><br /><small><span class="green">Note:</span> a:active <strong>must</strong> come after a:hover in the CSS definition in order to be effective!</small></p>
+        <p data-height="268" data-theme-id="0" data-slug-hash="Vvryeq" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/Vvryeq/'>Pseudoclasses for Links</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+        <p class="blue fragment"><small>Click 'Edit on CodePen' to edit the above code.<br />(Don't worry, your changes can't overwrite anything!)</small></p>
+      </section>-->
+
+      <!-- Let's Develop It! -->
+      <section>
+        <h2>Let's Develop It!</h2>
+        <p>Today we will be doing an in-class exercise to complete the first-half of
+          our class project</p>
+          <a href="http://bit.ly/gdi-html-class-3" target="_blank">http://bit.ly/gdi-html-class-3</a>
       </section>
 
       <!-- Next Week -->
 			<section>
 				<h2>Next Week</h2>
 				<p class="blue">CSS Positioning, Flow, &amp; Other<br />Coding Goodness</p>
-       
+
 			</section>
+
 			<section>
         <h3>Questions?</h3>
-        <h4><a href="mailto:lizs@girldevelopit.com">lizs@girldevelopit.com</a></h4>
+        <h4><a href="mailto:christinezorachapman@gmail.com">christinezorachapman@gmail.com</a></h4>
         <div style="font-size:1200%; height:100%; margin-top:20%" class="blue">?
           <div class="clear"></div>
         </div>
